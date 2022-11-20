@@ -2,12 +2,12 @@
 
 importer="wav"
 type="AudioStreamSample"
-path="res://.import/Cat Song 1.2.wav-c9314c49225b08d30628cd03473dd0ab.sample"
+path="res://.import/Cat Song 1.2.wav-85145cc85a6192e3eb52f4585350d0f2.sample"
 
 [deps]
 
-source_file="res://Sound/Cat Song 1.2.wav"
-dest_files=[ "res://.import/Cat Song 1.2.wav-c9314c49225b08d30628cd03473dd0ab.sample" ]
+source_file="res://Cat Song 1.2.wav"
+dest_files=[ "res://.import/Cat Song 1.2.wav-85145cc85a6192e3eb52f4585350d0f2.sample" ]
 
 [params]
 

@@ -1,0 +1,59 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Enimies/Laser Sprites/begin.png" type="Texture" id=2]
+[ext_resource path="res://Enimies/Laser Sprites/beam.png" type="Texture" id=3]
+
+[sub_resource type="CanvasItemMaterial" id=1]
+
+[sub_resource type="CanvasItemMaterial" id=2]
+
+[sub_resource type="CanvasItemMaterial" id=3]
+
+[sub_resource type="Gradient" id=4]
+offsets = PoolRealArray( 0, 0.476534 )
+colors = PoolColorArray( 1, 1, 1, 1, 1, 1, 1, 0.47451 )
+
+[sub_resource type="GradientTexture" id=5]
+gradient = SubResource( 4 )
+
+[sub_resource type="ParticlesMaterial" id=6]
+flag_disable_z = true
+spread = 180.0
+gravity = Vector3( 0, 98, 0 )
+initial_velocity = 20.0
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+color_ramp = SubResource( 5 )
+
+[node name="Laser" type="Node2D"]
+modulate = Color( 0.807843, 0.0352941, 0.0352941, 0.643137 )
+
+[node name="Begin" type="Sprite" parent="."]
+material = SubResource( 1 )
+texture = ExtResource( 2 )
+
+[node name="Beam" type="Sprite" parent="."]
+material = SubResource( 2 )
+texture = ExtResource( 3 )
+centered = false
+offset = Vector2( 0, -2 )
+region_enabled = true
+region_rect = Rect2( 0, 0, 10, 4 )
+region_filter_clip = true
+
+[node name="End" type="Position2D" parent="."]
+position = Vector2( 10, 0 )
+
+[node name="Particles2D" type="Particles2D" parent="End"]
+material = SubResource( 3 )
+lifetime = 0.25
+preprocess = 0.25
+process_material = SubResource( 6 )
+texture = ExtResource( 2 )
+
+[node name="RayCast2D" type="RayCast2D" parent="."]
+enabled = true
+cast_to = Vector2( 15, 0 )
+collision_mask = 4
+collide_with_areas = true
+collide_with_bodies = false
