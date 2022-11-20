@@ -3,7 +3,7 @@
 [ext_resource path="res://Menu/Scripts/Config.gd" type="Script" id=1]
 [ext_resource path="res://Menu/Background/Background Sprite/3 - Cloud_cover_1.png" type="Texture" id=2]
 [ext_resource path="res://Menu/Background/Background Sprite/5 - Sky_color.png" type="Texture" id=3]
-[ext_resource path="res://buttons/Buttons Sprites/exit.png" type="Texture" id=4]
+[ext_resource path="res://Buttons/Buttons Sprites/exit.png" type="Texture" id=4]
 [ext_resource path="res://Fontes/Fonte.tres" type="DynamicFont" id=5]
 [ext_resource path="res://Interior/Interiors_free/32x32/Room_Builder_free_32x32.png" type="Texture" id=6]
 [ext_resource path="res://Menu/Background/Background Sprite/1 - Foreground_scenery.png" type="Texture" id=7]
